@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+.venv*/
+venv/
+env/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Vector database
+src/chroma_store/
+chroma_store/
+
+# Local data and media files
+data/
+audio/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
