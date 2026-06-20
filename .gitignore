@@ -27,6 +27,7 @@ env/
 # Vector database
 src/chroma_store/
 chroma_store/
+src/wiki_mystery_store/
 
 # Local data and media files
 data/

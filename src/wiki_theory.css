@@ -1,0 +1,495 @@
+/* Original encyclopedia-inspired styling for the fictional WikiTheory UI. */
+
+.main .block-container {
+    max-width: 1140px;
+    padding: 0.35rem 1rem 1.8rem;
+}
+
+html,
+body {
+    font-size: 14px;
+}
+
+[data-testid="stSidebar"] {
+    background: #f8f9fa;
+    border-right: 1px solid #a2a9b1;
+    font-size: 0.88rem;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.WikiHeader {
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 0.45rem;
+    padding-bottom: 0.35rem;
+}
+
+.WikiHeader-brand {
+    align-items: baseline;
+    display: flex;
+    gap: 0.6rem;
+}
+
+.WikiHeader-symbol {
+    border: 1px solid #72777d;
+    color: #202122;
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    height: 1.65rem;
+    line-height: 1.55rem;
+    text-align: center;
+    width: 1.65rem;
+}
+
+.WikiHeader-name {
+    color: #202122;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    line-height: 1;
+}
+
+.WikiHeader-tagline,
+.WikiMeta {
+    color: #54595d;
+    font-size: 0.78rem;
+}
+
+.WikiLayout {
+    color: #202122;
+}
+
+.WikiArticle {
+    background: #fff;
+    border-left: 1px solid #c8ccd1;
+    padding-left: 0.85rem;
+}
+
+.WikiArticle-title {
+    border-bottom: 1px solid #a2a9b1;
+    color: #202122;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.08;
+    margin: 0.1rem 0 0.12rem;
+    padding-bottom: 0.18rem;
+}
+
+.WikiArticle-summary {
+    color: #202122;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    margin: 0.35rem 0 0.35rem;
+}
+
+.WikiArticle-body {
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.WikiArticle-body p {
+    margin: 0.28rem 0 0.55rem;
+}
+
+.WikiArticle-lead p {
+    margin-bottom: 0.62rem;
+}
+
+.WikiArticle-sectionTitle {
+    border-bottom: 1px solid #a2a9b1;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.28rem;
+    font-weight: 400;
+    margin: 0.9rem 0 0.35rem;
+    padding-bottom: 0.08rem;
+}
+
+.WikiTabs {
+    border-bottom: 1px solid #a2a9b1;
+    display: flex;
+    gap: 0.15rem;
+    justify-content: flex-end;
+    font-size: 0.82rem;
+    margin: 0.15rem 0 0.45rem;
+}
+
+.WikiTabs a {
+    border: 1px solid #a2a9b1;
+    border-bottom: 0;
+    color: #0645ad;
+    padding: 0.22rem 0.48rem;
+    text-decoration: none;
+}
+
+.WikiTabs a.is-active {
+    background: #fff;
+    color: #202122;
+    font-weight: 600;
+}
+
+.WikiSidebar-brand {
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.45rem;
+}
+
+.WikiSidebar-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+}
+
+.WikiSidebar-tagline,
+.WikiSidebar-small {
+    color: #54595d;
+    font-size: 0.78rem;
+    line-height: 1.35;
+}
+
+.WikiSidebar-list a,
+.WikiCategories a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.WikiSidebar-list a:hover,
+.WikiCategories a:hover,
+.WikiReferences a:hover,
+.WikiLink:hover {
+    text-decoration: underline;
+}
+
+.WikiInfobox {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    color: #202122;
+    font-size: 0.78rem;
+    margin-top: 0.2rem;
+}
+
+.WikiInfobox-title {
+    background: #eaecf0;
+    border-bottom: 1px solid #a2a9b1;
+    font-weight: 700;
+    padding: 0.32rem 0.38rem;
+    text-align: center;
+}
+
+.WikiInfobox-caption {
+    border-bottom: 1px solid #c8ccd1;
+    color: #54595d;
+    font-size: 0.74rem;
+    line-height: 1.35;
+    padding: 0.28rem 0.38rem;
+    text-align: center;
+}
+
+.WikiInfobox-row {
+    border-top: 1px solid #c8ccd1;
+    display: grid;
+    grid-template-columns: 42% 58%;
+}
+
+.WikiInfobox-key {
+    background: #f1f2f3;
+    font-weight: 600;
+    padding: 0.28rem 0.34rem;
+}
+
+.WikiInfobox-value {
+    padding: 0.28rem 0.34rem;
+}
+
+.WikiTableOfContents {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    display: inline-block;
+    font-size: 0.78rem;
+    margin: 0.25rem 0 0.75rem;
+    min-width: 210px;
+    padding: 0.42rem 0.58rem;
+}
+
+.WikiTableOfContents-title {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.WikiTableOfContents ol {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.WikiTableOfContents a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.WikiLink {
+    text-decoration: none;
+}
+
+.WikiLink-existing {
+    color: #0645ad;
+}
+
+.WikiLink-generated {
+    color: #5a3696;
+}
+
+.WikiLink-missing {
+    color: #ba0000;
+}
+
+.WikiReferences {
+    border-top: 1px solid #a2a9b1;
+    font-size: 0.82rem;
+    margin-top: 0.9rem;
+    padding-top: 0.45rem;
+}
+
+.WikiReferences h2,
+.WikiCategories h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+    margin: 0.2rem 0 0.45rem;
+}
+
+.WikiReferences ol {
+    margin-top: 0.3rem;
+    padding-left: 1.4rem;
+}
+
+.WikiExternalLinks ul {
+    margin-top: 0.3rem;
+    padding-left: 1.2rem;
+}
+
+.WikiCategories {
+    border: 1px solid #a2a9b1;
+    font-size: 0.78rem;
+    margin-top: 0.85rem;
+    padding: 0.35rem 0.45rem;
+}
+
+.WikiCategory-pill {
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.WikiNotice {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    color: #202122;
+    font-size: 0.84rem;
+    margin: 0.55rem 0;
+    padding: 0.5rem;
+}
+
+.WikiTable {
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    margin: 0.55rem 0 0.85rem;
+    width: 100%;
+}
+
+.WikiTable th,
+.WikiTable td {
+    border: 1px solid #a2a9b1;
+    padding: 0.32rem 0.4rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.WikiTable th {
+    background: #eaecf0;
+    font-weight: 700;
+}
+
+[data-testid="stDataFrame"] {
+    border: 1px solid #a2a9b1;
+    margin: 0.55rem 0 0.85rem;
+}
+
+[data-testid="stDataFrame"] div {
+    border-radius: 0 !important;
+}
+
+.WikiStatus {
+    color: #202122;
+    font-weight: 600;
+}
+
+.WikiEditPanel {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    font-size: 0.84rem;
+    margin: 0.6rem 0;
+    padding: 0.5rem;
+}
+
+.WikiEditMetadata {
+    display: grid;
+    gap: 0.24rem;
+}
+
+.WikiEditorLabel {
+    color: #202122;
+    font-size: 0.86rem;
+    font-weight: 700;
+    margin: 0.45rem 0 0.12rem;
+}
+
+.WikiSourceBox,
+.WikiDiffText {
+    background: #fff;
+    border: 1px solid #a2a9b1;
+    color: #202122;
+    font-size: 0.84rem;
+    line-height: 1.48;
+    margin: 0.35rem 0 0.8rem;
+    padding: 0.55rem 0.65rem;
+}
+
+.WikiDiffText {
+    font-family: Consolas, "Courier New", monospace;
+    white-space: normal;
+}
+
+.WikiPendingRevision {
+    background: #fff;
+}
+
+.WikiTalkExcerpt {
+    border-left: 2px solid #a2a9b1;
+    margin: 0.35rem 0;
+    padding-left: 0.55rem;
+    white-space: pre-wrap;
+}
+
+.WikiSignature {
+    color: #54595d;
+    font-size: 0.78rem;
+    margin-top: 0.16rem;
+    text-align: right;
+}
+
+.WikiQuote {
+    background: #f8f9fa;
+    border: 1px solid #c8ccd1;
+    border-left: 3px solid #a2a9b1;
+    font-size: 0.84rem;
+    line-height: 1.5;
+    margin: 0.4rem 0 0.65rem;
+    padding: 0.5rem 0.6rem;
+}
+
+.WikiSourceList {
+    background: #fff;
+    border: 1px solid #c8ccd1;
+    font-size: 0.82rem;
+    margin: 0.35rem 0 0.8rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+}
+
+.WikiDiscussionPost,
+.WikiTalkComment {
+    border: 1px solid #a2a9b1;
+    font-size: 0.84rem;
+    margin: 0.45rem 0;
+    padding: 0.5rem;
+}
+
+.WikiDiscussionPost {
+    background: #f8f9fa;
+}
+
+.WikiTalkComment {
+    background: #fff;
+    margin-left: 0.75rem;
+}
+
+.WikiTalkComment p {
+    margin: 0.25rem 0 0;
+}
+
+.WikiProfileTable th {
+    width: 32%;
+}
+
+div[data-testid="stForm"] {
+    border: 0;
+    padding: 0;
+}
+
+div[data-testid="stTextInput"] input,
+textarea,
+select {
+    border-radius: 0 !important;
+    font-size: 0.84rem !important;
+}
+
+div[data-testid="stTextInput"] input {
+    min-height: 1.85rem;
+}
+
+textarea {
+    background: #fff !important;
+    border: 1px solid #a2a9b1 !important;
+    box-shadow: none !important;
+    color: #202122 !important;
+    font-family: Consolas, "Courier New", monospace !important;
+    line-height: 1.45 !important;
+}
+
+textarea:focus,
+div[data-testid="stTextInput"] input:focus {
+    border-color: #72777d !important;
+    box-shadow: none !important;
+    outline: 1px solid #72777d !important;
+}
+
+.stButton button,
+button[kind="secondary"],
+button[kind="primary"] {
+    background: #f8f9fa !important;
+    border: 1px solid #a2a9b1 !important;
+    color: #202122 !important;
+    border-radius: 0 !important;
+    font-size: 0.82rem !important;
+    padding: 0.22rem 0.55rem !important;
+}
+
+.stButton button:hover,
+button[kind="secondary"]:hover,
+button[kind="primary"]:hover {
+    background: #fff !important;
+    border-color: #72777d !important;
+    color: #202122 !important;
+}
+
+@media (max-width: 900px) {
+    .main .block-container {
+        padding: 0.7rem 0.8rem 2rem;
+    }
+
+    .WikiArticle {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .WikiTabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .WikiArticle-title {
+        font-size: 1.8rem;
+    }
+}
